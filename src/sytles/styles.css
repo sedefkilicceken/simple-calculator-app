@@ -8,6 +8,7 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+  
   }
 
   @media screen and (min-width:992px) {
@@ -16,6 +17,7 @@
       width: 25%;
       box-shadow: 0 2rem 4rem var(--shadow);
       background-color: #1b2939;
+      size:cover;
   
   }
           }
@@ -33,6 +35,7 @@
             color: white;
 
         }
+        
 .computation-screen {
 
     height: 3vh;

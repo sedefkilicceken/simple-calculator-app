@@ -1,6 +1,7 @@
 import React from 'react';
-import Screen from './Screen/Screen'
-import KeyPad from './KeyPad/KeyPad'
+import Screen from './Screen/Screen';
+import KeyPad from './KeyPad/KeyPad';
+import * as math from 'mathjs';
 
 
 class Calculator extends React.Component {
@@ -53,7 +54,8 @@ class Calculator extends React.Component {
         
         else if (pressedButton === '=') {
             try {
-              const evalResult = eval(this.state.equation);
+               
+              const evalResult = math.evaluate(this.state.equation);
               const result = Number.isInteger(evalResult) ? evalResult : evalResult.toFixed(2);
               this.setState({
                  result : result,
